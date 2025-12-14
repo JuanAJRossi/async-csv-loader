@@ -4,11 +4,6 @@
 
 Feito para atender à necessidade de realizar o download de um grande volume de arquivos, evitando bloqueios de I/O, descompactando e processando os CSVs em thread executors, e carregando os dados em um banco de dados.
 
-<p align="center">
-  <img src="https://github.com/JuanAJRossi/async-csv-loader/blob/main/pipeline.png" />
-</p>
-
-
 
 
 ## Como instalar
@@ -45,13 +40,19 @@ docker build -t my-app-image
 ```
 
 
+## Fluxo de trabalho
+
+<p align="center">
+  <img src="https://github.com/JuanAJRossi/async-csv-loader/blob/main/pipeline.png" />
+</p>
 
 
-## Uso
+##  Recursos Principais
 
+Este projeto implementa uma pipeline de ingestão de alto desempenho focada em eficiência I/O e processamento paralelo:
 
-Rode a imagem criada.
-
-```
-docker run -d -p 8080:80 my-app-image
-```
+* **Ingestão Assíncrona:** Utiliza `asyncio` para gerenciar o I/O de rede sem bloqueios.
+* **Processamento por Polars:** Emprega a biblioteca **Polars** para análise de dados e carregamento ultrarrápido de CSVs.
+* **Multithread:** Descompactação e o processamentodo Polars são executados em **Thread Executors**.
+* **Automação:** Automatiza o download de arquivos `.zip` a partir de um bucket S3.
+* **Insert no PostgreSQL:** Envia os dados diretamente para um banco de dados PostgreSQL.
