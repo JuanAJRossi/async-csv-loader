@@ -49,7 +49,7 @@ docker build -t my-app-image
 
 ##  Recursos Principais
 
-Este projeto implementa uma pipeline de ingestão de alto desempenho focada em eficiência I/O e processamento paralelo:
+Este projeto implementa uma pipeline focada em eficiência I/O e processamento paralelo:
 
 * **Ingestão Assíncrona:** Utiliza `asyncio` para gerenciar o I/O de rede sem bloqueios.
 * **Processamento por Polars:** Emprega a biblioteca **Polars** para análise de dados e carregamento ultrarrápido de CSVs.
