@@ -1,0 +1,6 @@
+services:
+  asynczipdownloader:
+    image: asynczipdownloader
+    build:
+      context: .
+      dockerfile: ./Dockerfile
