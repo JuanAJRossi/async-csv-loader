@@ -53,6 +53,6 @@ Este projeto implementa uma pipeline focada em eficiência I/O e processamento p
 
 * **Ingestão Assíncrona:** Utiliza `asyncio` para gerenciar o I/O de rede sem bloqueios.
 * **Processamento por Polars:** Emprega a biblioteca **Polars** para análise de dados e carregamento ultrarrápido de CSVs.
-* **Multithread:** Descompactação e o processamentodo Polars são executados em **Thread Executors**.
+* **Multithread:** Descompactação e o processamento do Polars é executado em **Multithread*.
 * **Automação:** Automatiza o download de arquivos `.zip` a partir de um bucket S3.
 * **Insert no PostgreSQL:** Envia os dados diretamente para um banco de dados PostgreSQL.
