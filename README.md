@@ -4,6 +4,13 @@
 
 Feito para atender à necessidade de realizar o download de um grande volume de arquivos, evitando bloqueios de I/O, descompactando e processando os CSVs em thread executors, e carregando os dados em um banco de dados.
 
+<p align="center">
+  <img src="https://github.com/JuanAJRossi/async-csv-loader/blob/main/pipeline.png" />
+</p>
+
+
+
+
 ## Como instalar
 
 Clone o repositório.
